@@ -41,6 +41,8 @@ main {
 
 section {
   margin-bottom: 40px;
+  position: relative;
+  
 }
 
 h1, h2 {
@@ -75,3 +77,12 @@ textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius
+}
+
+
+#about {
+    right: 0;
+    width: 60vw;
+    height:20vh;
+    margin:0 ;
+  }
