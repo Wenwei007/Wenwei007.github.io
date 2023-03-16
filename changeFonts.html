@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <style>
+    #main {
+      color: #ffffff;
+      font-size: 18px;
+      font-family: Helvetica;
+
+    }
+
+    .archive-header {
+      border-bottom: 1px solid rgba(255, 255, 255);
+      margin: 0 0 2px;
+
+    }
+
+    * .archive-header h1.archive-title .statements {
+      display: block;
+      position: relative;
+    }
+
+    .archive-header h1.archive-title .statements .statement {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    */ .archive-header h1.archive-title .statements .statement:first-child {
+      top: auto;
+      left: auto;
+      position: relative;
+    }
+
+    .archive-header h1.archive-title .statements .statement .word {
+      text-transform: uppercase !important;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: alpha(opacity=(0));
+      opacity: 0;
+      -webkit-transition: opacity 167ms ease-in-out;
+      -moz-transition: opacity 167ms ease-in-out;
+      -o-transition: opacity 167ms ease-in-out;
+      -ms-transition: opacity 167ms ease-in-out;
+      transition: opacity 167ms ease-in-out;
+    }
+
+    .archive-header h1.archive-title .statements .statement .word.show {
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      filter: alpha(opacity=(100));
+      opacity: 1;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .archive-header h1.archive-title .statements .statement .word {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body class="archive post-type-archive post-type-archive-work">
+
+  <main id="main">
+    <div class="archive-header">
+      <h1 class="archive-title" style="height: 72px;">
+        <span class="statements">
+          <span class="statement">
+            <span class="word">↓ OPPO </span>
+            <span class="word"> FUTURE WORLD:SHOPPING</span>
+          </span>
+          <span class="statement">
+            <span class="word">↓ GIRLS' </span>
+            <span class="word"> "PERIOD POVERTY"</span>
+          </span>
+          <span class="statement">
+            <span class="word">↓ LEARN FROM PARAMECIUM </span>
+            <span class="word"> DATA PROTECTION</span>
+          </span>
+          <span class="statement">
+            <span class="word">↓ "HEART CARE" </span>
+            <span class="word"> FOR ELDERS</span>
+          </span>
+          <span class="statement">
+            <span class="word">↓ DWELLING IN THE SPRING </span>
+            <span class="word"> PARAMECIUM</span>
+          </span>
+
+        </span>
+      </h1>
+
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+      <script
+        type="text/javascript">!function ($) { var e = $("body"), n = $(window), a = $("html, body"), i = $("#banner"), s = "a25dd8e11057acdf066c52da2f6dbdbb", t = $("#main"), o = e.hasClass("single-work") || e.hasClass("page-approach"), r = parseInt(e.css("padding-top"), 10), d = e.find("#page-about"), l = $("#main").find(".type-work.teaser"), c = $("#burger"), h = $("#nav-main"), f = 0, p = 0, m = !1, v = function () { var a = n.width(), i = a >= 1024 ? "desktop" : a >= 768 ? "tablet" : "mobile"; return "mobile" !== i && i !== u && e.removeClass("mobile-menu"), i }, u = v(), g = function () { f = n.scrollTop(), w(), window.requestAnimationFrame(g) }, C = $("article.full p, article.full li:not(.noresize)"), b = function () { f = n.scrollTop(), p = n.height(), u = v(), C.each(function (e) { $(this).css("width", ""); var n = $(this), a = n.innerHeight(), i = n.innerWidth(), s = .005 * i, t = .3, o = n.text(), r = parseInt(n.css("line-height"), 10), d = n.innerHeight(); if (d > r && o.split(" ").length > d / r) for (var l = 0; i > l; l += s) { var c = n.innerWidth(); if (n.css({ width: i - l }), n.innerHeight() !== a) { var h = (i - c) * t; return void n.css({ width: i - h }) } } }) }, y = !1, w = function () { "desktop" === u && l.each(function () { var e = $(this); if (e.hasClass("video")) { var n = e.offset().top; if (e.hasClass("video-loading")) { if (e.hasClass("video-loaded")) if (f + p > n && n > f - e.innerHeight()) { if (e.data("playing") !== !0) { var a = e.find("video"), i = a[0]; i.play(), e.data("playing", !0) } } else if (e.data("playing") === !0) { var a = e.find("video"), i = a[0]; i.pause(), e.data("playing", !1) } } else f + p > n && n > f - e.innerHeight() ? void 0 === e.data("timer") && e.data("timer", setTimeout(function () { var n = e.find(".video-wrapper"), a = n.data("video"), i = n.find("video"), s = $("<source/>").attr({ type: "video/mp4", src: a }); i.on("loadeddata", function (n) { e.addClass("video-loaded") }), n.find("video").append(s), e.addClass("video-loading") }, 500)) : void 0 !== e.data("timer") && (clearTimeout(e.data("timer")), e.removeData("timer")) } }), $(".onview").each(function () { var e = $(this), n = e.offset().top, a = e.hasClass("video"), i = !a || e.hasClass("video-loaded"); f >= n - p && (n < f - e.innerHeight() || y || e.hasClass("viewed") || (y = !0, e.addClass("viewed"), setTimeout(function () { y = !1 }, 150))) }) }; if (e.hasClass("post-type-archive-work")) { var k = $("#featured-work"); if (k.length) { for (var H = k.children("article"), S = [], T = function (e) { for (var n = e.length, a, i; n;)i = Math.floor(Math.random() * n--), a = e[n], e[n] = e[i], e[i] = a; return e }, _ = 0; _ < H.length; _++)S.push(_); S = T(S), $.each(S, function (e, n) { k.before(H[n]) }), k.remove() } } if (n.on("load", function () { b(), e.addClass("loaded"), e.hasClass("post-type-archive-work") && M(), l.each(function () { var e = $(this), n = e.find(".image-wrapper"), a = n.find(".image-loader").html(), i = $(a).on("load", function () { e.addClass("image-loaded") }); n.append(i) }), window.requestAnimationFrame(g) }).on("throttledresize", function () { if (window.requestAnimationFrame(b), i.length && e.hasClass("show-banner")) { var n = i.innerHeight(); e.css({ paddingTop: n, transition: "padding 300ms ease-in-out" }), c.css({ transform: "translateY(" + n + "px)", transition: "transform 300ms ease-in-out" }) } }), c.on("click", function (e) { e.preventDefault(), a.addClass("mobile-menu open-menu"), bodyScrollLock.disableBodyScroll(h.find(".inner")[0]) }), h.on("click", "a.close", function (e) { e.preventDefault(), a.removeClass("open-menu"), bodyScrollLock.clearAllBodyScrollLocks() }), e.hasClass("post-type-archive-press") && (t.find(".type-press .entry-title").matchHeight(), t.find(".type-press .entry-content").matchHeight()), e.hasClass("post-type-archive-work")) { var L = t.find(".archive-header"), x = L.find("h1.archive-title"), A = L.find("nav"), D = L.find(".terms-wrapper"), B = L.find(".terms"), q = x.find(".statement"), z = 0, j = q.length, F = 0, Y = 0, I = function () { var e = 0; q.each(function () { $(this).height() > e && (e = $(this).height()), x.css("height", e) }) }, M = function () { z >= j && (z = 0); var e = q.eq(z), n = e.find(".word"), a = n.length; F >= a ? (F = 0, z++, j > 1 && M()) : (0 === F && q.find(".show").removeClass("show"), n.eq(F).addClass("show"), F++, F >= a ? setTimeout(M, 833) : setTimeout(M, 500)) }; I(), n.on("throttledresize", function () { I() }), A.on("click", "a.all.current", function (n) { n.preventDefault(); var a = $(this); A.find("a").removeClass("active"), a.addClass("active"), D.addClass("animate").find(".terms").removeClass("open"), e.removeClass("open-terms"), bodyScrollLock.clearAllBodyScrollLocks(), "mobile" !== u && D.addClass("animate").css({ height: 0 }) }), A.on("click", "a.open-terms", function (n) { n.preventDefault(); var a = $(this), i = a.attr("href"), s = L.find(i); A.find("a").removeClass("active"), a.addClass("active"), s.hasClass("open") ? (s.removeClass("open"), e.removeClass("open-terms"), bodyScrollLock.clearAllBodyScrollLocks(), "mobile" !== u && D.addClass("animate").css({ height: 0 })) : (B.removeClass("open"), s.addClass("open"), "mobile" === u ? (e.addClass("open-terms mobile-menu"), bodyScrollLock.disableBodyScroll(s.find(".inner")[0])) : D.addClass("animate").css({ height: s.innerHeight() })) }), L.find(".terms.is-open").each(function () { if ("mobile" !== u) { var e = $(this); B.removeClass("open"), e.addClass("open"), D.css({ height: e.innerHeight() }) } }), n.on("throttledresize", function () { u = v(), "mobile" === u ? (D.find(".terms.open").removeClass("open"), D.css({ height: "" })) : D.find(".terms.open").each(function () { var e = $(this); D.addClass("animate").css({ height: e.innerHeight() }) }) }), B.each(function () { var n = $(this); n.on("click", "a.close", function (a) { a.preventDefault(), n.removeClass("open"), e.removeClass("open-terms"), bodyScrollLock.clearAllBodyScrollLocks() }) }) } if (o && $("section.slide.video").each(function () { var e = $(this), n = e.find("figure .video-wrapper"), a = n.find("iframe"), i = a.prop("width"), s = a.prop("height"), t = s / i * 100; n.css({ "padding-top": t + "%" }) }), i.length) { var W = Cookies.get("continent_code"), E = function () { if ("EU" === W && "undefined" == typeof Cookies.get("hide_banner")) { var n = i.innerHeight(); e.addClass("show-banner").css({ paddingTop: n }), c.css({ transform: "translateY(" + n + "px)" }) } }; "undefined" == typeof W ? $.ajax({ url: "https://api.ipstack.com/check?fields=continent_code,country_code&language=en&access_key=" + s, dataType: "jsonp", success: function (e) { W = e.continent_code, Cookies.set("continent_code", W, { expires: 365 }), E() } }) : E(), i.on("click", "a.close", function (n) { n.preventDefault(), banner_height = 0, i.css({ transition: "transform 300ms ease-in-out" }), e.css({ paddingTop: banner_height, transition: "padding 300ms ease-in-out" }).removeClass("show-banner"), c.css({ transform: "translateY(" + banner_height + "px)", transition: "transform 300ms ease-in-out" }), Cookies.set("hide_banner", !0, { expires: 365 }) }) } }(jQuery);</script>
+</body>
+
+</html>
