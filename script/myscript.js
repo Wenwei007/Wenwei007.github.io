@@ -18,6 +18,16 @@ $(window).scroll(function() {
     }
 });
 
+$(document).ready(function() {
+    $('.project').mouseenter(function() {
+        $(this).find('.text-overlay').html('OPPO').fadeIn();
+    }).mouseleave(function() {
+        $(this).find('.text-overlay').fadeOut();
+    });
+});
+
+
+
 // $(document).ready(function() {
 //     $('img').fadeIn(2000); // 2 seconds animation duration
 // });
