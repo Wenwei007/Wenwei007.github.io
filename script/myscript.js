@@ -20,7 +20,7 @@ $(window).scroll(function() {
 
 $(document).ready(function() {
     $('.project').mouseenter(function() {
-        $(this).find('.text-overlay').html('OPPO').fadeIn();
+        $(this).find('.text-overlay').addClass('#intro1').fadeIn();
     }).mouseleave(function() {
         $(this).find('.text-overlay').fadeOut();
     });
