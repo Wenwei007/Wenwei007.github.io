@@ -2,88 +2,92 @@
 <html>
 
 <head>
-  <title>My Portfolio</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/css1.css">
-  <script src="./script/myscript.js"></script>
+
+    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/css1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script/myscript.js"></script>
 </head>
 
 <body>
-  <header>
-    <div class="header-left">
-      <ul id="wenwei">
-        <a href="#">Wenwei Tang</a>
-      </ul>
-    </div>
 
-    <nav>
+    <header>
 
-      <ul>
-        <li><a href="#home">Work</a></li>
+        <div class="header-left">
+            <ul id="wenwei">
+                <a href="#">Wenwei Tang</a>
+            </ul>
+        </div>
 
-        <li><a href="./info.html">Info</a></li>
-        <li><a href="./fun.html">Fun</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="section1">
-      <div class="container">
-        <h2 class="text">Hi, I'm Wenwei Tang.
-          <br> I'm a UX designer from China.🖖</br>
-          <br>
+        <nav>
 
+            <ul>
+                <li><a href="#home">Work</a></li>
 
-          I'm keener on real and virtual space interaction design.
-          I'm focusing on creating immersive and engaging
-          experiences for users.
-        </h2>
+                <li><a href="./info.html">Info</a></li>
+                <li><a href="./fun.html">Fun</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="section1">
+            <div class="container">
+                <h2 class="text">Hi, I'm Wenwei Tang.
+                    <br> I'm a UX designer from China.🖖</br>
+                    <br> I'm keener on real and virtual space interaction design. I'm focusing on creating immersive and engaging experiences for users.
+                </h2>
 
 
-      </div>
-      <!-- <div class="container">
+            </div>
+            <!-- <div class="container">
     </div> -->
-      <div id="changable_font">
-        <iframe id="insertHtml" src="./changeFonts.html" width="100%" height="200px"></iframe>
-      </div>
-    </section>
-    <section id="projects">
-      <h2 id="projectFont">PROJECTS</h2>
-      <div class="portfolio">
-        <div class="project">
-          <img src="./pic/iPhone XR Isometric.png" alt="Project 1">
+            <div id="changable_font">
+                <iframe id="insertHtml" src="./changeFonts.html" width="100%" height="200px"></iframe>
+            </div>
+        </section>
 
-          <p>Description of Project 1</p>
-          <a href="project1.html">OPPO</a>
-        </div>
-        <div class="project">
-          <img src="./pic/1212.png" alt="Project 2">
 
-          <p>Description of Project 2</p>
-          <a href="project2.html">Learn More</a>
-        </div>
 
-      </div>
-    </section>
+        <section id="projects">
+            <h2 id="projectFont">PROJECTS</h2>
+            <div class="portfolio">
+                <div class="project">
+                    <img src="./pic/iPhone XR Isometric.png" alt="Project 1" class="hidden">
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <form action="submit-form.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2023 John Smith</p>
-  </footer>
+                    <p>Description of Project 1</p>
+                    <a href="project1.html">OPPO</a>
+                </div>
+                <div class="project">
+                    <img src="./pic/1212.png" alt="Project 2">
+
+                    <p>Description of Project 2</p>
+                    <a href="project2.html">Learn More</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="submit-form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 John Smith</p>
+    </footer>
 
 
 </body>
