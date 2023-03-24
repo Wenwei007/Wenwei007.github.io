@@ -66,13 +66,15 @@ nav ul li a {
 
 .headImg {
     width: 100%;
-    height: 80vh;
+    height: 70%;
     margin: 0 auto;
     padding: 3vh;
-    background-image: url("../pic/Mask\ group.png");
+    background-image: url("../pic/Mask\ group\ .png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    /* border-top: 0.5px solid rgb(175, 175, 175); */
+    border-bottom: 0.5px solid rgb(175, 175, 175);
 }
 
 
@@ -120,7 +122,7 @@ div {
 #green-test4 {
     font-family: 'Poppins', sans-serif;
     color: rgb(119, 225, 255);
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: 400;
     padding-left: 1vh;
     margin-bottom: 1vh;
@@ -129,7 +131,7 @@ div {
 #green-test5 {
     font-family: 'Poppins', sans-serif;
     color: rgb(119, 225, 255);
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: 400;
     padding-left: 1vh;
 }
@@ -137,9 +139,9 @@ div {
 #right-text {
     height: 25vh;
     position: absolute;
-    right: 5%;
+    right: 3%;
     text-align: right;
-    bottom: 20%;
+    bottom: 15%;
 }
 
 #text1 {
@@ -153,7 +155,7 @@ div {
 #id-text1 {
     font-family: 'Poppins', sans-serif;
     color: rgb(218, 218, 218);
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-weight: 200;
     padding-left: 1vh;
     margin-bottom: 2vh;
@@ -170,16 +172,63 @@ div {
 #id-text2 {
     font-family: 'Poppins', sans-serif;
     color: rgb(218, 218, 218);
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-weight: 200;
     padding-left: 1vh;
     margin-bottom: 2vh;
 }
 
-#text3 {
-    font-family: 'Poppins', sans-serif;
+#right-text {
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+#introduction {
+    margin-top: 5%;
+    width: 100%;
+    height: 50%;
+}
+
+#intro-img {
+    position: absolute;
+    left: 5%;
+    height: 30%;
+    width: 50%;
+    margin-right: 0;
+    /* background-image: url("../pic/Group\ 1.png"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#intro2-image {
+    width: 35vw;
+    /* set the width to 800 pixels */
+    height: auto;
+    /* allow the height to adjust proportionally */
+    max-width: 100%;
+    /
+}
+
+#intro-text {
+    margin-top: 2.5vw;
+    width: 50%;
+    font-family: 'Inter', sans-serif;
     color: rgb(218, 218, 218);
-    font-size: 2.5vh;
-    font-weight: 200;
-    padding-left: 1vh;
+    font-size: 3.5vh;
+    font-weight: 300;
+    position: absolute;
+    right: 2%;
 }
