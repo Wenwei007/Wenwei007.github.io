@@ -71,3 +71,14 @@ function show5() {
     }
 }
 var done5 = setInterval("show5()", 30);
+
+
+$(document).ready(function() {
+    adjustBackgroundHeight();
+    $(window).resize(adjustBackgroundHeight);
+
+    function adjustBackgroundHeight() {
+        var imgHeight = $("#background-intro-img2").height();
+        $(".background").height(imgHeight + 20); // 加20是为了考虑到图片上方的margin-top
+    }
+});

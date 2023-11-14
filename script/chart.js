@@ -132,3 +132,27 @@ path2.attr('stroke-dasharray', path2Length + ' ' + path2Length)
     .duration(2000)
     .ease(d3.easeLinear)
     .attr('stroke-dashoffset', 0);
+
+
+// 获取 canvas 元素的引用
+const ctx = document.getElementById('myChart').getContext('2d');
+// 创建图表实例
+const myChart = new Chart(ctx, {
+    type: 'line', // 设置图表类型
+    data: {
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], // X轴标签
+        datasets: [{
+            label: 'Weekly Sales', // 数据集标签
+            data: [12, 19, 3, 5, 2, 3, 7], // 数据集的数据
+            borderColor: 'rgba(255, 76, 237, 1)', // 线条颜色
+            borderWidth: 2 // 线条宽度
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true // Y轴从 0 开始
+            }
+        }
+    }
+});
